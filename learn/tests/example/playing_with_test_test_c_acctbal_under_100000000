@@ -1,0 +1,1 @@
+SELECT SUM(c_acctbal) as total_acctbal FROM {{ ref('playing_with_tests') }} having total_acctbal < 100000000
